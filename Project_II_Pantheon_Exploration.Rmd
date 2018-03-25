@@ -1,5 +1,12 @@
-# **Popular Historic Figures Exploration**  \
-by Julian Hernández
+---
+title: "Popular Historic Figures Exploration"
+author: by Julian Hernández
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
 
 -------------------------
 
@@ -163,7 +170,7 @@ languages.
 
 ## Location
 
-```{r country_count }
+```{r fig.height=20, country_count }
 
 
 ggplot(subset(db, continent != ""), 
@@ -459,13 +466,11 @@ specificity, it only applied to the US.
 
 --------------------------
 
-# Bivariate Plots Section
+# Bivariate Plots: Sex
 
 There are two variables in the data I want to explore, Sex and HPI. During 
 this exploration I will search for relationships between the other variables 
 and those elements. 
-
-## Sex:
 
 
 ```{r Bivariate_Plots}
@@ -644,7 +649,7 @@ Here we see a big departure from the distribution we saw on the Domain univariat
 analysis. The distribution of domains for women are remarkably different than the
 one from men or the general one.
 
-# Bivariate Analysis: Gender Exploration
+# Bivariate Analysis: Sex
 
 ## Talk about some of the relationships you observed in this part of \
 the investigation. How did the feature(s) of interest vary with other features in the dataset?
@@ -679,7 +684,7 @@ by continent? And for men? \
 
 -------_
 
-# HPI
+# Bivariate Plots: HPI
 
 ### Page Views & HPI
 
@@ -1036,9 +1041,7 @@ figure gets older it becomes more historically relevant.
 
 ========================================================
 
-# Multivariate Plots Section
-
-## Sex:
+# Multivariate Plots: Sex
 
 I come to this part of the analysis with questions already in mind, like: \
 - Which profession **domain** recieve more visits depending on gender? \
@@ -1224,7 +1227,7 @@ The only fields and continents in which women tend to have a higher
 historical popularity index are: Asian women working in Science, African women
 working in institutions, 
 
-## Multivariate Analysis: Sex
+# Multivariate Analysis: Sex
 
 ### Talk about some of the relationships you observed in this part of the \
 investigation. Were there features that strengthened each other in terms of \
